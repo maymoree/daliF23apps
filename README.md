@@ -10,9 +10,9 @@ Project name: **seasonSocialMedia**<br>
 Website name: **'tis the seasons**
 
 ## Features 🌟
-Required Feature:
-- [x] Displays members' profiles<br>
-Additional Features:
+### Required Feature:
+- [x] Displays members' profiles
+### Additional Features:
 - [x] A post section where user can scroll through seasonal activities
 - [x] A like button for each post
 
