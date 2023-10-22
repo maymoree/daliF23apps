@@ -6,12 +6,12 @@
 Fall 2023 DALI Application for Dev Position
 
 ## 🌾 About the Project - Social Media Challange: Frontend
-- Project name: seasonSocialMedia
-- Website name: 'tis the seasons
+Project name: **seasonSocialMedia**<br>
+Website name: **'tis the seasons**
 
 ## Features 🌟
 Required Feature:
-- [x] Displays members' profiles\n
+- [x] Displays members' profiles<br>
 Additional Features:
 - [x] A post section where user can scroll through seasonal activities
 - [x] A like button for each post
