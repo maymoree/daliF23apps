@@ -47,6 +47,7 @@
   display: flex;
   align-items: flex-start;
   padding: 10px;
+  
 }
 
 .texts {
@@ -74,6 +75,10 @@
   height: 40px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.heartIcon {
+  flex-shrink: 0;
 }
 
 

@@ -45,7 +45,7 @@ const Post = () => {
                         </div>
                     </div>
 
-                    <Heart isClick={heartStates[index]} onClick={() => toggleHeart(index)} />
+                    <Heart className='heartIcon' isClick={heartStates[index]} onClick={() => toggleHeart(index)} />
 
                 </div>
 
