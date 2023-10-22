@@ -11,7 +11,7 @@ Fall 2023 DALI Application for Dev Position
 
 ## Features 🌟
 Required Feature:
-- [x] Displays members' profiles
+- [x] Displays members' profiles\n
 Additional Features:
 - [x] A post section where user can scroll through seasonal activities
 - [x] A like button for each post
