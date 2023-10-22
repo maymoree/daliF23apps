@@ -21,7 +21,7 @@ Website name: **'tis the seasons**
 ## 🐝 To Run 
 Simply run with `npm run dev` in the seasonSocialMedia project
 
-## Files & Folders in src Folder
+## Files & Folders in src Folder ☘️
 These are the files and folders that I have edited from the original project creation
 ### assets
 - contains pictures used in the project
@@ -35,6 +35,6 @@ These are the files and folders that I have edited from the original project cre
 - **App.css** : The design of the whole website
 - **App.jsx** : Renders the Profile page and Post page side-by-side
 
-## Future Implementations
+## 🫧 Future Implementations
 - Add more functionality to the post page of the website
 
