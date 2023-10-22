@@ -1,8 +1,15 @@
+// ***********************************************
+// Memo Tangtipongkul, Fall 2023
+// ***********************************************
+
 import React, { useState, useEffect } from 'react';
 import fetchUserData from '../components/userData';
-import leaves from '../assets/leaves.png';
-import bckgrnd from '../assets/background.png';
 
+// ***********************************************
+// the profile component -- a required feature
+// allows user to browse through all the dali members' profiles
+// has fall decorations around the profile photo
+// ***********************************************
 
 const Profile = () => {
 
@@ -17,20 +24,29 @@ const Profile = () => {
         fetchData();
     }, []);
 
+    // shortens long strings
     const truncateText = (text, maxLength) => {
+        // check if string is null or undefined
         if (text === null || text === undefined) {
             return "uh oh empty!";
         }
+        // returns substring of the long string if longer than maxLength
         return text.length > maxLength ? `${text.substring(0, maxLength)}...` : text;
     };
 
 
     return (
         <div className='profPage'>
+
+            {/* title of the page */}
             <div style={{ fontWeight: 500, fontSize: 30, textAlign: 'center', paddingBottom: 10}}>♡ dali members 🧁</div>
+
+            {/* maps through all dali members' data */}
             {userData.map((user, index) => (
+
                 <div className='profContainer' key={index}>
 
+                    {/* the header consists of the profile picture, and name */}
                     <div className='profHeader'>
 
                         <div className='profPicContainer'>
@@ -50,6 +66,7 @@ const Profile = () => {
                         </div>
                     </div>
 
+                    {/* the middle part consists of position(s) at DALI, and a fun fact */}
                     <div className='profMid'>
                         <div className='position'>
                             <div style={{ fontWeight: 700, fontSize: 15, paddingBottom: 3}}>In DALI, I am a...</div>
@@ -65,6 +82,7 @@ const Profile = () => {
                         </div>
                     </div>
 
+                    {/* the bottom part consists of favorites things, and their studies */}
                     <div className='profBot'>
                         <div className='favs'>
                             <div style={{ fontWeight: 700, fontSize: 15, paddingBottom: 3}}>Things I Love:</div>
@@ -78,6 +96,7 @@ const Profile = () => {
                         </div>
                     </div>
 
+                    {/* last part is the quote */}
                     <div className='quote'>
                         <div style={{ fontWeight: 500, fontSize: 15, padding: 20}}>{truncateText(user.quote, 300)}</div>
                     </div>
