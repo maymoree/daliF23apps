@@ -9,7 +9,7 @@ Fall 2023 DALI Application for Dev Position
 Project name: **seasonSocialMedia**<br>
 Website name: **'tis the seasons**
 
-![tistheseasons](https://github.com/maymoree/daliF23apps/assets/139424554/4fb99e19-e848-41b7-8ae1-8559ee078951)
+![tistheseasons](https://github.com/maymoree/daliF23apps/assets/139424554/0ffa2821-c7f1-4993-ae66-245ef3862e3c)
 
 ## Features 🌟
 ### Required Feature:
