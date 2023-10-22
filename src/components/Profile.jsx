@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import fetchUserData from '../components/userData';
-
+import leaves from '../assets/leaves.png';
+import bckgrnd from '../assets/background.png';
 
 
 const Profile = () => {
@@ -31,7 +32,13 @@ const Profile = () => {
                 <div className='profContainer' key={index}>
 
                     <div className='profHeader'>
-                        <img className='profPic' src={user.picture}></img>
+
+                        <div className='profPicContainer'>
+                            <div className='bckgrnd'></div>
+                            <img className='profPic' src={user.picture}></img>
+                            <div className='leaves'></div>
+                        </div>
+                        
                         <div className='profHeaderTexts'>
                             <div style={{ fontWeight: 500, fontSize: 25, paddingBottom: 5}}>{user.name}</div>
                             <div style={{ fontWeight: 500, fontSize: 19, paddingBottom: 3}}>📚 {user.year}</div>

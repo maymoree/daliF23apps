@@ -42,7 +42,7 @@
   width: 100%;
   border-radius: 10px;
   border: 4px solid;
-  border-color: #b7b7a4;
+  border-color: #DD9758;
   background-color: #FBFBFB;
   display: flex;
   align-items: flex-start;
@@ -95,7 +95,7 @@
 
 .profContainer {
   border-radius: 10px;
-  background: #B7B7A4;
+  background: #c6d1da;
   width: 100%;
   overflow: auto;
   margin-bottom: 5%;
@@ -105,20 +105,54 @@
 
 .profHeader{
   height: 35%;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-left: 40px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   display: flex;
   justify-content: flex-start;
   column-gap: 10px;
 }
 
+.profPicContainer {
+  /* set to number so doesn't deform with shrink */
+  width: 161px;
+  height: 161px;
+  position: relative;
+  z-index: 0;
+  aspect-ratio: 1;
+}
+
+.bckgrnd {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/background.png');
+  background-size: cover;
+  border-radius: 50%;
+  z-index: -1;
+  aspect-ratio: 1;
+}
+
 .profHeader img {
-  width: 137px;
-  height: 137px;
+  position: absolute;
+  width: 82%;
+  height: 82%;
   border-radius: 50%;
   object-fit: cover;
+  z-index: 1;
+  aspect-ratio: 1;
+}
+
+.leaves {
+  position: absolute;
+  background-image: url('assets/leaves.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px; 
+  top: 60%;
+  z-index: 2;
 }
 
 .profHeaderTexts {
